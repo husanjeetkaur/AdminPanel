@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "237203632290",
+    "firebase_url": "https://firestoredataapp-80e49.firebaseio.com",
+    "project_id": "firestoredataapp-80e49",
+    "storage_bucket": "firestoredataapp-80e49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237203632290:android:97b7c04357ff9a0d6a27fb",
+        "android_client_info": {
+          "package_name": "com.example.firestoredataapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237203632290-4a9np5gsit3hf8dujpcpjheabm4pdifl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMaAUd9lX6qnRa5QaLHSb-jH1vauQ4VW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237203632290-4a9np5gsit3hf8dujpcpjheabm4pdifl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
