@@ -29,8 +29,6 @@ public class AdminLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
-
-
         Email = findViewById(R.id.Email);
         Password = findViewById(R.id.Password);
 
@@ -42,6 +40,7 @@ public class AdminLogin extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
                 String email = Email.getText().toString().trim();
                 String password = Password.getText().toString().trim();
 
@@ -64,12 +63,11 @@ public class AdminLogin extends AppCompatActivity {
 
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
-
                 auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+                            progressBar.setVisibility(View.GONE);
                             Toast.makeText(AdminLogin.this,"Sign In Successfully",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),SelectOption.class));
 
