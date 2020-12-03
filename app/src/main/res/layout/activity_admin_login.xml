@@ -18,13 +18,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Enter Your Email"
+        android:hint="Admin@gmail.com"
         android:id="@+id/Email"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberPassword"
-        android:hint="Enter Your Password"
+        android:hint="123456"
         android:id="@+id/Password"/>
     <Button
         android:layout_width="wrap_content"
